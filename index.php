@@ -40,6 +40,8 @@ function login($email, $password) {
 	$try_number = $html->find("input[name=try_number]")->value;
 	$unrecognized_tries = $html->find("input[name=unrecognized_tries]")->value;
 	$bi_xrwh = $html->find("input[name=bi_xrwh]")->value;
+	
+	include "secret.php";
 
 	$form = [
 		"lsd" => $lsd,
