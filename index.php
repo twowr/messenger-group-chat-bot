@@ -40,6 +40,19 @@ function login($email, $password) {
 	$try_number = $html->find("input[name=try_number]")->value;
 	$unrecognized_tries = $html->find("input[name=unrecognized_tries]")->value;
 	$bi_xrwh = $html->find("input[name=bi_xrwh]")->value;
+
+	$form = [
+		"lsd" => $lsd,
+		"jazoest" => $jazoest,
+		"m_ts" => $m_ts,
+		"li" => $li,
+		"try_number" => $try_number,
+		"unrecognized_tries" => $unrecognized_tries,
+		"email" => $email,
+		"pass" => $pass,
+		"bi_xrwh" => $bi_xrwh,
+		"login" => "Log in"
+	];
 }
 
 switch ($method) {
